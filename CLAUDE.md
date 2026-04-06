@@ -36,8 +36,14 @@
 
 ## カスタムスキル（スラッシュコマンド）
 
+### /ai-strategy-full（★推奨: 統合コマンド）
+一気通貫コマンド。レポート生成→品質改善→クライアントレビュー→PPTX生成まで全自動。
+使用例: `/ai-strategy-full トヨタ自動車`
+使用例: `/ai-strategy-full 日本の金融業界 --skip-pptx`
+オプション: `--skip-review`（レビュースキップ）、`--skip-pptx`（PPTXスキップ）、`--scale small|medium|large`
+
 ### /ai-strategy
-メインコマンド。企業名/業界名を引数に取り、フェーズ1-8の全レポートを順次生成。
+レポート生成のみ（Stage 1）。企業名/業界名を引数に取り、フェーズ1-8の全レポートを順次生成。
 使用例: `/ai-strategy トヨタ自動車`
 
 ### /industry-analysis
