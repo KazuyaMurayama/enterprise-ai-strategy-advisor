@@ -56,11 +56,11 @@ Stage 1        Stage 2         Stage 3          Stage 4
 |:----:|---------|------|---------|
 | 1 | `phase2_industry_analysis.md` | PESTEL+AI変数、Porter's 5 Forces+AI変数、競合ベンチマーク3-5社、AI成熟度評価 | 数値付き市場規模、導入率 |
 | 2 | `phase3_usecase_mapping.md` | バリューチェーン分析、2×2プライオリティマトリクス、Top10ユースケース詳細 | 各UCに投資額・効果額・回収期間 |
-| 3 | `phase4_technology_architecture.md` | Build/Buy/Partner判定表、基盤モデル選定（5軸評価）、データ戦略5段階 | TCO比較、マルチモデル戦略 |
+| 3 | `phase4_technology_architecture.md` | Build/Buy/Partner判定表、基盤モデル選定（5軸評価）、データ戦略5段階、**AIセキュリティアーキテクチャ**（Zero Trust/サプライチェーン/PETs/データリネージ） | TCO比較、マルチモデル戦略、セキュリティ投資 |
 | 4 | `phase5_organization_talent.md` | CoE設計（ハイブリッド型）、人材マトリクス、チェンジマネジメント（90日計画） | 人数・コスト付き |
 | 5 | `phase6_financial_model.md` | **★マスターP&L**（Single Source of Truth）。投資計画、リターン試算、感度分析3シナリオ、NPV/IRR | 段階的発現率、隠れコスト明示、会計処理方針 |
 | 6 | `phase7_roadmap.md` | 5フェーズロードマップ、稟議プロセス（日本企業の場合）、Go/No-Go基準、撤退基準 | 月次タイムライン、ステージゲート |
-| 7 | `phase8_risk_management.md` | リスク一覧（6カテゴリ）、AI倫理ガバナンス、ハルシネーション対策3層防御 | EU AI Act分類（該当する場合） |
+| 7 | `phase8_risk_management.md` | リスク一覧（6カテゴリ）、AI倫理ガバナンス、ハルシネーション対策3層防御、**先進AIセキュリティ10領域**（LLMセキュリティ/レッドチーミング/XAI/監査証跡/AI BCP-DR等） | EU AI Act分類、CLAUDE.mdの10領域セキュリティフレームワーク準拠 |
 | 8 | `phase1_executive_summary.md` | **Phase6の数値を引用**して作成。3投資オプション、KPIサマリー、用語集 | Phase6と完全整合 |
 
 > **注**: Phase1はPhase6完成後に作成する（数値の整合性確保のため）
