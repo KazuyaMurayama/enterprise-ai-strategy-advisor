@@ -10,9 +10,10 @@
 
 | ブランチ名 | 最終コミット日 | 用途 |
 |-----------|--------------|------|
-| `claude/summarize-repos-sonnet-wkEJN` | 2026-04-14 | **インデックス整備済みブランチ（現在）** |
-| `claude/ai-strategy-generator-hmKWX` | 2026-04-13 | 日本製造業AIレポート・AIセキュリティ 10領域フレームワーク |
+| `claude/ai-strategy-generator-hmKWX` | 2026-04-15 | **デフォルトブランチ（FILE_INDEX.md / CLAUDE.md 管理・製造業レポート）** |
 | `claude/ai-strategy-pharma-No48g` | 2026-04-14 | 製薬業界3社レポート（大塔製薬・日本化薬・大樹生命） |
+| `claude/summarize-repos-sonnet-wkEJN` | 2026-04-14 | インデックス整備済みブランチ |
+| `claude/check-claude-md-files-gDYFd` | 2026-04-15 | CLAUDE.md・ファイルインデックス品質チェック作業ブランチ |
 
 ---
 
@@ -20,8 +21,8 @@
 
 | ファイルパス | 最終更新日 | サイズ | 説明 |
 |-------------|-----------|-------|------|
-| `CLAUDE.md` | 2026-04-13 | 7.1KB | **メイン設定** — 品質基準・AIセキュリティ10領域・コマンド一覧 |
-| `FILE_INDEX.md` | 2026-04-14 | — | **本ファイル** — ナビゲーション起点 |
+| `CLAUDE.md` | 2026-04-15 | 7.6KB | **メイン設定** — 品質基準・AIセキュリティ10領域・コマンド一覧・FILE_INDEX参照ルール |
+| `FILE_INDEX.md` | 2026-04-15 | — | **本ファイル** — ナビゲーション起点 |
 | `templates/report-template.md` | 2026-04-05 | 6.6KB | レポートテンプレート（オリジナル） |
 | `templates/report-template_20260405.md` | 2026-04-05 | 6.6KB | レポートテンプレート（日付付き版） |
 
@@ -145,3 +146,5 @@
 | CFO/CTO/製造業担当者レビュー生成 | 2026-04-05 | `output/japanese_manufacturing/reviews/` |
 | 大塔製薬GxP対応セキュリティ | 2026-04-14 | `output/otsuka_pharma/phase8_*` |
 | 日本化薬・大樹生命レポート生成 | 2026-04-14 | `output/nippon_kayaku/`・`output/daiju_life/` |
+| FILE_INDEX.md をデフォルトブランチに追加 | 2026-04-15 | `FILE_INDEX.md` |
+| CLAUDE.md に FILE_INDEX参照ルール追記 | 2026-04-15 | `CLAUDE.md` |
