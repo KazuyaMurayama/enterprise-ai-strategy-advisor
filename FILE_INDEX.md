@@ -1,150 +1,312 @@
-# Enterprise AI Strategy Advisor — ファイルインデックス
+# FILE_INDEX — enterprise-ai-strategy-advisor
 
-> **Claude Code 参照ルール**: ファイルを検索・参照する際は、**必ずこのインデックスを最初に確認**すること。  
-> 同種ファイルが複数存在する場合、**日付（`_YYYYMMDD`）が新しいファイルが最新情報**を持つ。  
-> スキルコマンドのルーティングは `CLAUDE.md` を参照。
+> ⚠️ このファイルは自動生成です。手動編集は次回更新で上書きされます。
 
----
-
-## ブランチ一覧
-
-| ブランチ名 | 最終コミット日 | 用途 |
-|-----------|--------------|------|
-| `claude/ai-strategy-generator-hmKWX` | 2026-04-15 | **デフォルトブランチ（FILE_INDEX.md / CLAUDE.md 管理・製造業レポート）** |
-| `claude/ai-strategy-pharma-No48g` | 2026-04-14 | 製薬業界3社レポート（大塔製薬・日本化薬・大樹生命） |
-| `claude/summarize-repos-sonnet-wkEJN` | 2026-04-14 | インデックス整備済みブランチ |
-| `claude/check-claude-md-files-gDYFd` | 2026-04-15 | CLAUDE.md・ファイルインデックス品質チェック作業ブランチ |
+| 項目 | 値 |
+|---|---|
+| リポジトリ | KazuyaMurayama/enterprise-ai-strategy-advisor |
+| ブランチ | main |
+| 総ファイル数 | 118 |
+| 最終更新 | 2026-05-02 |
+| 管理者 | 男座員也（Kazuya Oza） |
 
 ---
 
-## 設定・システムファイル
+## カテゴリ別サマリー
 
-| ファイルパス | 最終更新日 | サイズ | 説明 |
-|-------------|-----------|-------|------|
-| `CLAUDE.md` | 2026-04-15 | 7.6KB | **メイン設定** — 品質基準・AIセキュリティ10領域・コマンド一覧・FILE_INDEX参照ルール |
-| `FILE_INDEX.md` | 2026-04-15 | — | **本ファイル** — ナビゲーション起点 |
-| `templates/report-template.md` | 2026-04-05 | 6.6KB | レポートテンプレート（オリジナル） |
-| `templates/report-template_20260405.md` | 2026-04-05 | 6.6KB | レポートテンプレート（日付付き版） |
-
----
-
-## スキルファイル（`.claude/skills/`）
-
-> コマンド実行時のみ参照。日付なしが現行動作ファイル、日付付きが版管理用。
-
-| ファイルパス | 最終更新日 | サイズ | 対応コマンド | 優先度 |
-|-------------|-----------|-------|------------|--------|
-| `.claude/skills/ai-strategy-full.md` | 2026-04-06 | 9.0KB | `/ai-strategy-full` | ★推奨 |
-| `.claude/skills/ai-strategy-full_20260406.md` | 2026-04-06 | 9.0KB | 同上（日付付き版） | — |
-| `.claude/skills/ai-strategy.md` | 2026-04-05 | 2.9KB | `/ai-strategy` | 標準 |
-| `.claude/skills/ai-strategy_20260405.md` | 2026-04-05 | 2.9KB | 同上（日付付き版） | — |
-| `.claude/skills/executive-summary.md` | 2026-04-05 | 1.4KB | `/executive-summary` | 単体 |
-| `.claude/skills/executive-summary_20260405.md` | 2026-04-05 | 1.4KB | 同上（日付付き版） | — |
-| `.claude/skills/industry-analysis.md` | 2026-04-05 | 1.8KB | `/industry-analysis` | 単体 |
-| `.claude/skills/industry-analysis_20260405.md` | 2026-04-05 | 1.8KB | 同上（日付付き版） | — |
-| `.claude/skills/roi-calculator.md` | 2026-04-05 | 1.9KB | `/roi-calculator` | 単体 |
-| `.claude/skills/roi-calculator_20260405.md` | 2026-04-05 | 1.9KB | 同上（日付付き版） | — |
-| `.claude/skills/usecase-mapper.md` | 2026-04-05 | 1.7KB | `/usecase-mapper` | 単体 |
-| `.claude/skills/usecase-mapper_20260405.md` | 2026-04-05 | 1.7KB | 同上（日付付き版） | — |
+| カテゴリ | ファイル数 |
+|---|---|
+| Documentation | 115 |
+| Asset | 1 |
+| Config | 1 |
+| Other | 1 |
 
 ---
 
-## 生成済みレポート — ブランチ: `claude/ai-strategy-generator-hmKWX`
+## ディレクトリ構成
 
-### 日本製造業（`output/japanese_manufacturing/`）
-
-> **注**: Phase4・Phase8はAIセキュリティ10領域フレームワーク適用済み（2026-04-13更新）
-
-| ファイルパス | 最終更新日 | サイズ | 内容 |
-|-------------|-----------|-------|------|
-| `output/japanese_manufacturing/README.md` | 2026-04-05 | 4.8KB | 目次・KPIサマリー |
-| `output/japanese_manufacturing/full_report.md` | **2026-04-13** | 162KB | **統合レポート（最新・セキュリティ強化版）** |
-| `output/japanese_manufacturing/phase1_executive_summary.md` | 2026-04-05 | 9.1KB | エグゼクティブサマリー |
-| `output/japanese_manufacturing/phase2_industry_analysis.md` | 2026-04-05 | 21KB | 業界分析（PESTEL・Porter's 5 Forces） |
-| `output/japanese_manufacturing/phase3_usecase_mapping.md` | 2026-04-05 | 25KB | バリューチェーンAI機会マッピング |
-| `output/japanese_manufacturing/phase4_technology_architecture.md` | **2026-04-13** | 24KB | 技術アーキテクチャ ← セキュリティ4領域追加 |
-| `output/japanese_manufacturing/phase5_organization_talent.md` | 2026-04-05 | 19KB | 組織・人材戦略 |
-| `output/japanese_manufacturing/phase6_financial_model.md` | 2026-04-05 | 23KB | 財務モデル・ROI試算 |
-| `output/japanese_manufacturing/phase7_roadmap.md` | 2026-04-05 | 23KB | 実行ロードマップ（36ヶ月） |
-| `output/japanese_manufacturing/phase8_risk_management.md` | **2026-04-13** | 29KB | リスク管理 ← AIセキュリティ6領域追加 |
-| `output/japanese_manufacturing/presentation_deck.md` | 2026-04-05 | 24KB | 経営層向け 20枚スライド |
-| `output/japanese_manufacturing/ai_strategy_presentation.pptx` | 2026-04-05 | 65KB | PPTXファイル |
-
-#### クライアントレビュー（`output/japanese_manufacturing/reviews/`）
-
-| ファイルパス | 最終更新日 | サイズ | 内容 |
-|-------------|-----------|-------|------|
-| `output/japanese_manufacturing/reviews/client_a_cfo.md` | 2026-04-05 | 4.5KB | CFO視点クライアントレビュー |
-| `output/japanese_manufacturing/reviews/client_b_cto.md` | 2026-04-05 | 5.6KB | CTO視点クライアントレビュー |
-| `output/japanese_manufacturing/reviews/client_c_manufacturing.md` | 2026-04-05 | 5.7KB | 製造業担当者視点クライアントレビュー |
+```
+.
+├── .claude/
+│   └── skills/
+│       ├── ai-strategy_20260405.md
+│       ├── ai-strategy-full_20260406.md
+│       ├── ai-strategy-full.md
+│       ├── ai-strategy.md
+│       ├── executive-summary_20260405.md
+│       ├── executive-summary.md
+│       ├── industry-analysis_20260405.md
+│       ├── industry-analysis.md
+│       ├── roi-calculator_20260405.md
+│       ├── roi-calculator.md
+│       ├── usecase-mapper_20260405.md
+│       └── usecase-mapper.md
+├── output/
+│   ├── amazon_japan/
+│   │   ├── full_report.md
+│   │   ├── phase1_executive_summary.md
+│   │   ├── phase2_industry_analysis.md
+│   │   ├── phase3_usecase_mapping.md
+│   │   ├── phase4_technology_architecture.md
+│   │   ├── phase5_organization_talent.md
+│   │   ├── phase6_financial_model.md
+│   │   ├── phase7_roadmap.md
+│   │   ├── phase8_risk_management.md
+│   │   └── README.md
+│   ├── cross_company_usecase_matrix/
+│   │   └── ai_usecase_proposals.md
+│   ├── daiju_life/
+│   │   ├── full_report.md
+│   │   ├── phase1_executive_summary.md
+│   │   ├── phase2_industry_analysis.md
+│   │   ├── phase3_usecase_mapping.md
+│   │   ├── phase4_technology_architecture.md
+│   │   ├── phase5_organization_talent.md
+│   │   ├── phase6_financial_model.md
+│   │   ├── phase7_roadmap.md
+│   │   ├── phase8_risk_management.md
+│   │   └── README.md
+│   ├── daishi_hokuetsu/
+│   │   ├── full_report.md
+│   │   ├── phase1_executive_summary.md
+│   │   ├── phase2_industry_analysis.md
+│   │   ├── phase3_usecase_mapping.md
+│   │   ├── phase4_technology_architecture.md
+│   │   ├── phase5_organization_talent.md
+│   │   ├── phase6_financial_model.md
+│   │   ├── phase7_roadmap.md
+│   │   ├── phase8_risk_management.md
+│   │   └── README.md
+│   ├── ebara/
+│   │   ├── full_report.md
+│   │   ├── phase1_executive_summary.md
+│   │   ├── phase2_industry_analysis.md
+│   │   ├── phase3_usecase_mapping.md
+│   │   ├── phase4_technology_architecture.md
+│   │   ├── phase5_organization_talent.md
+│   │   ├── phase6_financial_model.md
+│   │   ├── phase7_roadmap.md
+│   │   ├── phase8_risk_management.md
+│   │   └── README.md
+│   ├── japanese_manufacturing/
+│   │   ├── reviews/
+│   │   │   ... (3 items)
+│   │   ├── ai_strategy_presentation.pptx
+│   │   ├── full_report.md
+│   │   ├── phase1_executive_summary.md
+│   │   ├── phase2_industry_analysis.md
+│   │   ├── phase3_usecase_mapping.md
+│   │   ├── phase4_technology_architecture.md
+│   │   ├── phase5_organization_talent.md
+│   │   ├── phase6_financial_model.md
+│   │   ├── phase7_roadmap.md
+│   │   ├── phase8_risk_management.md
+│   │   ├── presentation_deck.md
+│   │   └── README.md
+│   ├── nippon_kayaku/
+│   │   ├── full_report.md
+│   │   ├── phase1_executive_summary.md
+│   │   ├── phase2_industry_analysis.md
+│   │   ├── phase3_usecase_mapping.md
+│   │   ├── phase4_technology_architecture.md
+│   │   ├── phase5_organization_talent.md
+│   │   ├── phase6_financial_model.md
+│   │   ├── phase7_roadmap.md
+│   │   ├── phase8_risk_management.md
+│   │   └── README.md
+│   ├── otsuka_pharma/
+│   │   ├── full_report.md
+│   │   ├── phase1_executive_summary.md
+│   │   ├── phase2_industry_analysis.md
+│   │   ├── phase3_usecase_mapping.md
+│   │   ├── phase4_technology_architecture.md
+│   │   ├── phase5_organization_talent.md
+│   │   ├── phase6_financial_model.md
+│   │   ├── phase7_roadmap.md
+│   │   ├── phase8_risk_management.md
+│   │   └── README.md
+│   ├── shikoku_electric/
+│   │   ├── full_report.md
+│   │   ├── phase1_executive_summary.md
+│   │   ├── phase2_industry_analysis.md
+│   │   ├── phase3_usecase_mapping.md
+│   │   ├── phase4_technology_architecture.md
+│   │   ├── phase5_organization_talent.md
+│   │   ├── phase6_financial_model.md
+│   │   ├── phase7_roadmap.md
+│   │   ├── phase8_risk_management.md
+│   │   └── README.md
+│   ├── 太陽油脂_SCM_BPR/
+│   │   ├── appendix_hearing_log.md
+│   │   ├── board_memo_0520.md
+│   │   ├── full_report.md
+│   │   ├── phase1_executive_summary.md
+│   │   ├── phase2_as_is_analysis.md
+│   │   ├── phase3_judgment_work_framework.md
+│   │   ├── phase4_ai_rpa_mapping.md
+│   │   ├── phase5_headcount_simulation.md
+│   │   ├── phase6_roadmap_stakeholder.md
+│   │   ├── phase7_risk_governance.md
+│   │   └── README.md
+│   └── .gitkeep
+├── templates/
+│   ├── report-template_20260405.md
+│   └── report-template.md
+├── .gitignore
+├── CLAUDE.md
+├── FILE_INDEX.md
+├── README.md
+├── tasks.md
+└── Timeout_Prevention.md
+```
 
 ---
 
-## 生成済みレポート — ブランチ: `claude/ai-strategy-pharma-No48g`
+## ファイル詳細
 
-### 大塔製薬（`output/otsuka_pharma/`） ★最新
+### Documentation (115件)
 
-> ROI 257%・NPV 470億円・総投資350億円。GxP準拠・CNS創薬AI特化。
+<details>
+<summary>クリックして展開 (115件)</summary>
 
-| ファイルパス | 最終更新日 | サイズ | 内容 |
-|-------------|-----------|-------|------|
-| `output/otsuka_pharma/README.md` | 2026-04-14 | 2.8KB | 目次（KPIサマリー） |
-| `output/otsuka_pharma/full_report.md` | 2026-04-14 | 72KB | **統合レポート** |
-| `output/otsuka_pharma/phase1_executive_summary.md` | 2026-04-14 | 5.6KB | エグゼクティブサマリー |
-| `output/otsuka_pharma/phase2_industry_analysis.md` | 2026-04-14 | 6.8KB | 製薬業界分析 |
-| `output/otsuka_pharma/phase3_usecase_mapping.md` | 2026-04-14 | 10KB | ユースケースマッピング |
-| `output/otsuka_pharma/phase4_technology_architecture.md` | 2026-04-14 | 11KB | 技術アーキテクチャ |
-| `output/otsuka_pharma/phase5_organization_talent.md` | 2026-04-14 | 8.1KB | 組織・人材戦略 |
-| `output/otsuka_pharma/phase6_financial_model.md` | 2026-04-14 | 6.5KB | 財務モデル |
-| `output/otsuka_pharma/phase7_roadmap.md` | 2026-04-14 | 11KB | 実行ロードマップ |
-| `output/otsuka_pharma/phase8_risk_management.md` | 2026-04-14 | 13KB | リスク管理（GxP対応） |
+| ファイル | サイズ | 説明 |
+|---|---|---|
+| `.claude/skills/ai-strategy_20260405.md` | 2.9 KB | Claude Code 設定・スキル |
+| `.claude/skills/ai-strategy-full_20260406.md` | 6.6 KB | Claude Code 設定・スキル |
+| `.claude/skills/ai-strategy-full.md` | 8.8 KB | Claude Code 設定・スキル |
+| `.claude/skills/ai-strategy.md` | 2.8 KB | Claude Code 設定・スキル |
+| `.claude/skills/executive-summary_20260405.md` | 1.5 KB | Claude Code 設定・スキル |
+| `.claude/skills/executive-summary.md` | 1.4 KB | Claude Code 設定・スキル |
+| `.claude/skills/industry-analysis_20260405.md` | 1.9 KB | Claude Code 設定・スキル |
+| `.claude/skills/industry-analysis.md` | 1.8 KB | Claude Code 設定・スキル |
+| `.claude/skills/roi-calculator_20260405.md` | 2.0 KB | Claude Code 設定・スキル |
+| `.claude/skills/roi-calculator.md` | 1.9 KB | Claude Code 設定・スキル |
+| `.claude/skills/usecase-mapper_20260405.md` | 1.7 KB | Claude Code 設定・スキル |
+| `.claude/skills/usecase-mapper.md` | 1.6 KB | Claude Code 設定・スキル |
+| `CLAUDE.md` | 8.0 KB | Claude Code プロジェクト設定・命名ルール |
+| `FILE_INDEX.md` | 10.2 KB | （このファイル）全ファイルインデックス |
+| `output/amazon_japan/full_report.md` | 77.0 KB | リサーチ出力データ |
+| `output/amazon_japan/phase1_executive_summary.md` | 6.2 KB | リサーチ出力データ |
+| `output/amazon_japan/phase2_industry_analysis.md` | 11.5 KB | リサーチ出力データ |
+| `output/amazon_japan/phase3_usecase_mapping.md` | 10.6 KB | リサーチ出力データ |
+| `output/amazon_japan/phase4_technology_architecture.md` | 12.3 KB | リサーチ出力データ |
+| `output/amazon_japan/phase5_organization_talent.md` | 8.8 KB | リサーチ出力データ |
+| `output/amazon_japan/phase6_financial_model.md` | 6.1 KB | リサーチ出力データ |
+| `output/amazon_japan/phase7_roadmap.md` | 9.7 KB | リサーチ出力データ |
+| `output/amazon_japan/phase8_risk_management.md` | 11.9 KB | リサーチ出力データ |
+| `output/amazon_japan/README.md` | 2.5 KB | リポジトリ概要・セットアップ手順 |
+| `output/cross_company_usecase_matrix/ai_usecase_proposals.md` | 53.7 KB | リサーチ出力データ |
+| `output/daiju_life/full_report.md` | 97.8 KB | リサーチ出力データ |
+| `output/daiju_life/phase1_executive_summary.md` | 8.3 KB | リサーチ出力データ |
+| `output/daiju_life/phase2_industry_analysis.md` | 10.4 KB | リサーチ出力データ |
+| `output/daiju_life/phase3_usecase_mapping.md` | 13.8 KB | リサーチ出力データ |
+| `output/daiju_life/phase4_technology_architecture.md` | 13.3 KB | リサーチ出力データ |
+| `output/daiju_life/phase5_organization_talent.md` | 10.0 KB | リサーチ出力データ |
+| `output/daiju_life/phase6_financial_model.md` | 7.7 KB | リサーチ出力データ |
+| `output/daiju_life/phase7_roadmap.md` | 12.4 KB | リサーチ出力データ |
+| `output/daiju_life/phase8_risk_management.md` | 22.0 KB | リサーチ出力データ |
+| `output/daiju_life/README.md` | 2.6 KB | リポジトリ概要・セットアップ手順 |
+| `output/daishi_hokuetsu/full_report.md` | 58.9 KB | リサーチ出力データ |
+| `output/daishi_hokuetsu/phase1_executive_summary.md` | 4.7 KB | リサーチ出力データ |
+| `output/daishi_hokuetsu/phase2_industry_analysis.md` | 8.4 KB | リサーチ出力データ |
+| `output/daishi_hokuetsu/phase3_usecase_mapping.md` | 8.3 KB | リサーチ出力データ |
+| `output/daishi_hokuetsu/phase4_technology_architecture.md` | 7.6 KB | リサーチ出力データ |
+| `output/daishi_hokuetsu/phase5_organization_talent.md` | 6.3 KB | リサーチ出力データ |
+| `output/daishi_hokuetsu/phase6_financial_model.md` | 4.1 KB | リサーチ出力データ |
+| `output/daishi_hokuetsu/phase7_roadmap.md` | 9.0 KB | リサーチ出力データ |
+| `output/daishi_hokuetsu/phase8_risk_management.md` | 10.4 KB | リサーチ出力データ |
+| `output/daishi_hokuetsu/README.md` | 2.1 KB | リポジトリ概要・セットアップ手順 |
+| `output/ebara/full_report.md` | 68.8 KB | リサーチ出力データ |
+| `output/ebara/phase1_executive_summary.md` | 5.0 KB | リサーチ出力データ |
+| `output/ebara/phase2_industry_analysis.md` | 8.9 KB | リサーチ出力データ |
+| `output/ebara/phase3_usecase_mapping.md` | 7.0 KB | リサーチ出力データ |
+| `output/ebara/phase4_technology_architecture.md` | 13.0 KB | リサーチ出力データ |
+| `output/ebara/phase5_organization_talent.md` | 7.9 KB | リサーチ出力データ |
+| `output/ebara/phase6_financial_model.md` | 7.2 KB | リサーチ出力データ |
+| `output/ebara/phase7_roadmap.md` | 8.9 KB | リサーチ出力データ |
+| `output/ebara/phase8_risk_management.md` | 11.0 KB | リサーチ出力データ |
+| `output/ebara/README.md` | 2.4 KB | リポジトリ概要・セットアップ手順 |
+| `output/japanese_manufacturing/full_report.md` | 158.1 KB | リサーチ出力データ |
+| `output/japanese_manufacturing/phase1_executive_summary.md` | 8.8 KB | リサーチ出力データ |
+| `output/japanese_manufacturing/phase2_industry_analysis.md` | 20.6 KB | リサーチ出力データ |
+| `output/japanese_manufacturing/phase3_usecase_mapping.md` | 24.6 KB | リサーチ出力データ |
+| `output/japanese_manufacturing/phase4_technology_architecture.md` | 23.6 KB | リサーチ出力データ |
+| `output/japanese_manufacturing/phase5_organization_talent.md` | 18.7 KB | リサーチ出力データ |
+| `output/japanese_manufacturing/phase6_financial_model.md` | 22.1 KB | リサーチ出力データ |
+| `output/japanese_manufacturing/phase7_roadmap.md` | 22.1 KB | リサーチ出力データ |
+| `output/japanese_manufacturing/phase8_risk_management.md` | 27.8 KB | リサーチ出力データ |
+| `output/japanese_manufacturing/presentation_deck.md` | 23.4 KB | リサーチ出力データ |
+| `output/japanese_manufacturing/README.md` | 4.6 KB | リポジトリ概要・セットアップ手順 |
+| `output/japanese_manufacturing/reviews/client_a_cfo.md` | 4.5 KB | リサーチ出力データ |
+| `output/japanese_manufacturing/reviews/client_b_cto.md` | 5.6 KB | リサーチ出力データ |
+| `output/japanese_manufacturing/reviews/client_c_manufacturing.md` | 5.7 KB | リサーチ出力データ |
+| `output/nippon_kayaku/full_report.md` | 100.1 KB | リサーチ出力データ |
+| `output/nippon_kayaku/phase1_executive_summary.md` | 8.1 KB | リサーチ出力データ |
+| `output/nippon_kayaku/phase2_industry_analysis.md` | 10.3 KB | リサーチ出力データ |
+| `output/nippon_kayaku/phase3_usecase_mapping.md` | 14.3 KB | リサーチ出力データ |
+| `output/nippon_kayaku/phase4_technology_architecture.md` | 15.4 KB | リサーチ出力データ |
+| `output/nippon_kayaku/phase5_organization_talent.md` | 9.6 KB | リサーチ出力データ |
+| `output/nippon_kayaku/phase6_financial_model.md` | 8.9 KB | リサーチ出力データ |
+| `output/nippon_kayaku/phase7_roadmap.md` | 13.5 KB | リサーチ出力データ |
+| `output/nippon_kayaku/phase8_risk_management.md` | 20.0 KB | リサーチ出力データ |
+| `output/nippon_kayaku/README.md` | 3.9 KB | リポジトリ概要・セットアップ手順 |
+| `output/otsuka_pharma/full_report.md` | 70.2 KB | リサーチ出力データ |
+| `output/otsuka_pharma/phase1_executive_summary.md` | 5.4 KB | リサーチ出力データ |
+| `output/otsuka_pharma/phase2_industry_analysis.md` | 6.7 KB | リサーチ出力データ |
+| `output/otsuka_pharma/phase3_usecase_mapping.md` | 9.9 KB | リサーチ出力データ |
+| `output/otsuka_pharma/phase4_technology_architecture.md` | 10.8 KB | リサーチ出力データ |
+| `output/otsuka_pharma/phase5_organization_talent.md` | 7.9 KB | リサーチ出力データ |
+| `output/otsuka_pharma/phase6_financial_model.md` | 6.4 KB | リサーチ出力データ |
+| `output/otsuka_pharma/phase7_roadmap.md` | 10.3 KB | リサーチ出力データ |
+| `output/otsuka_pharma/phase8_risk_management.md` | 12.7 KB | リサーチ出力データ |
+| `output/otsuka_pharma/README.md` | 2.7 KB | リポジトリ概要・セットアップ手順 |
+| `output/shikoku_electric/full_report.md` | 54.8 KB | リサーチ出力データ |
+| `output/shikoku_electric/phase1_executive_summary.md` | 4.8 KB | リサーチ出力データ |
+| `output/shikoku_electric/phase2_industry_analysis.md` | 8.8 KB | リサーチ出力データ |
+| `output/shikoku_electric/phase3_usecase_mapping.md` | 7.9 KB | リサーチ出力データ |
+| `output/shikoku_electric/phase4_technology_architecture.md` | 7.1 KB | リサーチ出力データ |
+| `output/shikoku_electric/phase5_organization_talent.md` | 6.0 KB | リサーチ出力データ |
+| `output/shikoku_electric/phase6_financial_model.md` | 3.8 KB | リサーチ出力データ |
+| `output/shikoku_electric/phase7_roadmap.md` | 7.3 KB | リサーチ出力データ |
+| `output/shikoku_electric/phase8_risk_management.md` | 9.2 KB | リサーチ出力データ |
+| `output/shikoku_electric/README.md` | 2.2 KB | リポジトリ概要・セットアップ手順 |
+| `output/太陽油脂_SCM_BPR/appendix_hearing_log.md` | 8.5 KB | リサーチ出力データ |
+| `output/太陽油脂_SCM_BPR/board_memo_0520.md` | 6.9 KB | リサーチ出力データ |
+| `output/太陽油脂_SCM_BPR/full_report.md` | 95.7 KB | リサーチ出力データ |
+| `output/太陽油脂_SCM_BPR/phase1_executive_summary.md` | 7.3 KB | リサーチ出力データ |
+| `output/太陽油脂_SCM_BPR/phase2_as_is_analysis.md` | 12.9 KB | リサーチ出力データ |
+| `output/太陽油脂_SCM_BPR/phase3_judgment_work_framework.md` | 21.0 KB | リサーチ出力データ |
+| `output/太陽油脂_SCM_BPR/phase4_ai_rpa_mapping.md` | 10.2 KB | リサーチ出力データ |
+| `output/太陽油脂_SCM_BPR/phase5_headcount_simulation.md` | 11.8 KB | リサーチ出力データ |
+| `output/太陽油脂_SCM_BPR/phase6_roadmap_stakeholder.md` | 8.1 KB | リサーチ出力データ |
+| `output/太陽油脂_SCM_BPR/phase7_risk_governance.md` | 9.0 KB | リサーチ出力データ |
+| `output/太陽油脂_SCM_BPR/README.md` | 5.3 KB | リポジトリ概要・セットアップ手順 |
+| `README.md` | 2.1 KB | リポジトリ概要・セットアップ手順 |
+| `tasks.md` | 1.2 KB | タスク管理・セッション履歴 |
+| `templates/report-template_20260405.md` | 6.6 KB | Markdown ドキュメント |
+| `templates/report-template.md` | 6.5 KB | Markdown ドキュメント |
+| `Timeout_Prevention.md` | 4.9 KB | タイムアウト対策ガイド |
 
-### 日本化薬（`output/nippon_kayaku/`）
+</details>
 
-| ファイルパス | 最終更新日 | サイズ | 内容 |
-|-------------|-----------|-------|------|
-| `output/nippon_kayaku/README.md` | 2026-04-14 | 4.0KB | 目次 |
-| `output/nippon_kayaku/full_report.md` | 2026-04-14 | 102KB | **統合レポート** |
-| `output/nippon_kayaku/phase1_executive_summary.md` | 2026-04-14 | 8.3KB | エグゼクティブサマリー |
-| `output/nippon_kayaku/phase2_industry_analysis.md` | 2026-04-14 | 11KB | 業界分析 |
-| `output/nippon_kayaku/phase3_usecase_mapping.md` | 2026-04-14 | 15KB | ユースケースマッピング |
-| `output/nippon_kayaku/phase4_technology_architecture.md` | 2026-04-14 | 16KB | 技術アーキテクチャ |
-| `output/nippon_kayaku/phase5_organization_talent.md` | 2026-04-14 | 9.8KB | 組織・人材戦略 |
-| `output/nippon_kayaku/phase6_financial_model.md` | 2026-04-14 | 9.1KB | 財務モデル |
-| `output/nippon_kayaku/phase7_roadmap.md` | 2026-04-14 | 14KB | 実行ロードマップ |
-| `output/nippon_kayaku/phase8_risk_management.md` | 2026-04-14 | 20KB | リスク管理 |
+### Asset (1件)
 
-### 大樹生命（`output/daiju_life/`）
+| ファイル | サイズ | 説明 |
+|---|---|---|
+| `output/japanese_manufacturing/ai_strategy_presentation.pptx` | 65.4 KB | リサーチ出力データ |
 
-| ファイルパス | 最終更新日 | サイズ | 内容 |
-|-------------|-----------|-------|------|
-| `output/daiju_life/README.md` | 2026-04-14 | 2.7KB | 目次 |
-| `output/daiju_life/full_report.md` | 2026-04-14 | 100KB | **統合レポート** |
-| `output/daiju_life/phase1_executive_summary.md` | 2026-04-14 | 8.4KB | エグゼクティブサマリー |
-| `output/daiju_life/phase2_industry_analysis.md` | 2026-04-14 | 11KB | 業界分析 |
-| `output/daiju_life/phase3_usecase_mapping.md` | 2026-04-14 | 14KB | ユースケースマッピング |
-| `output/daiju_life/phase4_technology_architecture.md` | 2026-04-14 | 14KB | 技術アーキテクチャ |
-| `output/daiju_life/phase5_organization_talent.md` | 2026-04-14 | 10KB | 組織・人材戦略 |
-| `output/daiju_life/phase6_financial_model.md` | 2026-04-14 | 7.9KB | 財務モデル |
-| `output/daiju_life/phase7_roadmap.md` | 2026-04-14 | 13KB | 実行ロードマップ |
-| `output/daiju_life/phase8_risk_management.md` | 2026-04-14 | 22KB | リスク管理 |
+### Config (1件)
 
-### ⚠️ 日本製造業（`output/japanese_manufacturing/`） — 旧版（pharma branch）
+| ファイル | サイズ | 説明 |
+|---|---|---|
+| `.gitignore` | 377 B | Git 除外設定 |
 
-> このブランチにも `output/japanese_manufacturing/` が存在するが、セキュリティフレームワーク追加前の**旧版**。  
-> **最新版**（AIセキュリティ10領域適用済み）は `claude/ai-strategy-generator-hmKWX` ブランチを参照。
+### Other (1件)
+
+| ファイル | サイズ | 説明 |
+|---|---|---|
+| `output/.gitkeep` | - | ファイル |
 
 ---
 
-## バージョン差分まとめ
-
-| 変更内容 | 適用日 | 影響ファイル |
-|---------|--------|------------|
-| AIセキュリティ10領域フレームワーク追加 | 2026-04-13 | `CLAUDE.md`・`phase4_*`・`phase8_*`（製造業） |
-| 統合コマンド `/ai-strategy-full` 追加 | 2026-04-06 | `.claude/skills/ai-strategy-full.md` |
-| 経営層PPTXデッキ生成 | 2026-04-05 | `presentation_deck.md`・`*.pptx` |
-| CFO/CTO/製造業担当者レビュー生成 | 2026-04-05 | `output/japanese_manufacturing/reviews/` |
-| 大塔製薬GxP対応セキュリティ | 2026-04-14 | `output/otsuka_pharma/phase8_*` |
-| 日本化薬・大樹生命レポート生成 | 2026-04-14 | `output/nippon_kayaku/`・`output/daiju_life/` |
-| FILE_INDEX.md をデフォルトブランチに追加 | 2026-04-15 | `FILE_INDEX.md` |
-| CLAUDE.md に FILE_INDEX参照ルール追記 | 2026-04-15 | `CLAUDE.md` |
+_自動生成: 2026-05-02 | 管理者: 男座員也（Kazuya Oza）_
