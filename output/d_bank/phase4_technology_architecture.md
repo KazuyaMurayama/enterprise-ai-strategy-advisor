@@ -58,7 +58,7 @@
 | AML/KYC疑義取引検知 | **Buy（GxP認証済み）** | NICE Actimize, FICO, Temenos AML |
 | コールセンターAI | **Buy（SaaS）** | COTOHA, Google CCAI |
 | 社内ナレッジ管理 | **Buy（クラウドAPI）** | Azure OpenAI + Cognitive Search |
-| 地域企業DX支援AI | **Build（独自差別化）** | Claude API + 新潟産業データRAG（独自構築が競争優位の源泉） |
+| 地域企業DX支援AI | **Build（独自差別化）** | Claude API + A県産業データRAG（独自構築が競争優位の源泉） |
 | 資産運用AIアドバイザー | **Partner** | Finatext, MONEX AI, MUFGのFintechパートナー |
 
 ---
