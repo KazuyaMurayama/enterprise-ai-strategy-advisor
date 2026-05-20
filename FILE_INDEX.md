@@ -12,6 +12,35 @@
 
 ---
 
+## 生成済みフルレポート一覧
+
+最終更新: 2026-05-20
+
+| # | レポート名（日本語） | 業界・対象 | フルレポート | Priority Matrix | 特記 |
+|:---:|---|---|:---:|:---:|---|
+| 1 | D銀行 AI戦略 | 地方銀行（資産約1.8兆円） | [full_report](output/d_bank/full_report.md) | Format A（高/中/低） | Quick Win: 融資審査AI・AML/KYC AI・渉外担当AI |
+| 2 | 大新北越フィナンシャルグループ AI戦略 | 地方銀行（合併後統合） | [full_report](output/daishi_hokuetsu/full_report.md) | Format A（高/中/低） | 合併シナジー活用・25ユースケース |
+| 3 | 大樹生命保険 AI戦略 | 生命保険 | [full_report](output/daiju_life/full_report.md) | Format B（4象限） | 引受・保全・資産運用の全フェーズAI化 |
+| 4 | 荏原製作所 AI戦略 | 製造業（ポンプ・環境システム） | [full_report](output/ebara/full_report.md) | Format A（高/中/低） | Quick Win: 予知保全AI・設計支援AI |
+| 5 | T保険会社 AI戦略 | 損害保険 | [full_report](output/t_insurance/full_report.md) | Format B（4象限） | Quick Win: 外交員支援AI・コールセンターAI |
+| 6 | 大塚製薬 AI戦略 | 製薬（創薬・臨床・マーケティング） | [full_report](output/otsuka_pharma/full_report.md) | Format A（高/中/低） | 医薬品R&Dサイクル全体AI化 |
+| 7 | 四国電力 AI戦略 | 電力・エネルギー | [full_report](output/shikoku_electric/full_report.md) | Format A（高/中/低） | 規制産業特有のガバナンス対応 |
+| 8 | Amazon Japan AI戦略 | Eコマース・クラウド | [full_report](output/amazon_japan/full_report.md) | Format A（高/中/低） | EC・物流・AWS 3軸、トラック別Quick Win |
+| 9 | 日本化薬 AI戦略 | 特殊化学品・ADC製造 | [full_report](output/nippon_kayaku/full_report.md) | Format B（4象限） | ADCリンカーAI・臨床試験最適化が最重点 |
+| 10 | 日本製造業 AI戦略 | 製造業（汎用・中堅中小含む） | [full_report](output/japanese_manufacturing/full_report.md) | Format C（2×2 Box） | プレゼンデッキ・クライアントレビュー付き |
+| 11 | 太陽油脂 SCM・BPR AI化戦略 | 食品・油脂製造 | [full_report](output/太陽油脂_SCM_BPR/full_report.md) | —（BPR特殊形式） | SCM業務改革特化。取締役会メモ・ヒアリングログ付き |
+| 12 | O製薬 AI戦略（デモ版） | 製薬（大塚製薬マスク版） | [full_report](output/o_pharma_demo/full_report.md) | Format A（高/中/低） | 実名非開示・外部デモ提案用 |
+| 13 | E製作所 AI戦略（デモ版） | 製造業（荏原製作所マスク版） | [full_report](output/e_corp_demo/full_report.md) | Format A（高/中/低） | 実名非開示・外部デモ提案用 |
+| 14 | S電力 AI戦略（デモ版） | 電力（四国電力マスク版） | [full_report](output/s_denryoku_demo/full_report.md) | Format A（高/中/低） | 実名非開示・外部デモ提案用 |
+
+### 横断分析レポート
+
+| レポート名 | 説明 | リンク |
+|---|---|---|
+| 業界横断AIユースケース比較マトリクス | 全業界横断のAIユースケース提案集・比較分析 | [ai_usecase_proposals.md](output/cross_company_usecase_matrix/ai_usecase_proposals.md) |
+
+---
+
 ## カテゴリ別サマリー
 
 | カテゴリ | ファイル数 |

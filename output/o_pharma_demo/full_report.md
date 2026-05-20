@@ -177,22 +177,11 @@ MR支援AIアシスタント（約3,000名）            CNS創薬AI（標的探
 
 ## 3-1. プライオリティマトリクス（26ユースケース）
 
-```
-戦略価値
-  高 │ UC1 CNS創薬AI      │ UC21 MR支援AI      │
-     │ UC3 OT Onco AI │ UC22 薬事CTD AI    │
-     │ UC7 AI臨床試験設計 │ UC23 ナレッジAI    │
-     │                  │ UC4 ADMET予測AI    │
-  中 │ UC2 分子生成AI     │ UC8 患者適格AI     │
-     │ UC14 DTx統合AI    │ UC10 GMP品質AI     │
-     │ UC6 バイオマーカーAI│ UC11 逸脱予測AI    │
-     │ UC16 RWE解析AI    │ UC9 安全性AI       │
-  低 │ UC15 競合情報AI    │ UC12 製造最適化AI  │
-     │ UC18 HRリスキリング│ UC17 財務予測AI    │
-     ├──────────────────┼──────────────────
-     │   低（実現困難）   │  高（実現容易）
-     │              実現可能性
-```
+| 戦略価値 | 実現可能性：低（実現困難） | 実現可能性：高（実現容易） |
+|:---:|:---|:---|
+| **高** | UC1 CNS創薬AI<br>UC3 OT Onco AI<br>UC7 AI臨床試験設計 | **[Quick Win] UC21 MR支援AI**<br>**[Quick Win] UC22 薬事CTD AI**<br>**[Quick Win] UC23 ナレッジAI**<br>UC4 ADMET予測AI |
+| **中** | UC2 分子生成AI<br>UC14 DTx統合AI<br>UC6 バイオマーカーAI<br>UC16 RWE解析AI | UC8 患者適格AI<br>UC10 GMP品質AI<br>UC11 逸脱予測AI<br>UC9 安全性AI |
+| **低** | UC15 競合情報AI<br>UC18 HRリスキリング | UC12 製造最適化AI<br>UC17 財務予測AI |
 
 ---
 
