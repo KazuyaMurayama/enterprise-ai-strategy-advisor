@@ -13,22 +13,11 @@
 
 ## 3-1. プライオリティマトリクス（24ユースケース）
 
-```
-戦略価値
-  高 │ UC12 地域企業DX AI  │ UC1  融資審査AI      │
-     │ UC15 資産運用AI     │ UC4  AML/KYC AI      │
-     │ UC11 不動産担保AI   │ UC20 渉外担当AI      │
-     │                   │ UC5  詐欺検知AI       │
-  中 │ UC13 農業融資AI     │ UC21 窓口・CX AI     │
-     │ UC16 ALMリスクAI   │ UC3  個人信用AI      │
-     │ UC18 ESG融資AI     │ UC6  コールセンターAI │
-     │ UC22 補助金マッチAI │ UC8  書類OCR AI      │
-  低 │ UC19 競合情報AI     │ UC9  事務自動化AI    │
-     │ UC23 HR・採用AI     │ UC17 財務予測AI      │
-     ├──────────────────┼─────────────────
-     │    低（実現困難）   │  高（実現容易）
-     │              実現可能性
-```
+| 戦略価値 | 実現可能性：低（実現困難） | 実現可能性：高（実現容易） |
+|:---:|:---|:---|
+| **高** | UC12 地域企業DX AI<br>UC15 資産運用AI<br>UC11 不動産担保AI | **[Quick Win] UC1  融資審査AI**<br>**[Quick Win] UC4  AML/KYC AI**<br>**[Quick Win] UC20 渉外担当AI**<br>UC5  詐欺検知AI |
+| **中** | UC13 農業融資AI<br>UC16 ALMリスクAI<br>UC18 ESG融資AI<br>UC22 補助金マッチAI | UC21 窓口・CX AI<br>UC3  個人信用AI<br>UC6  コールセンターAI<br>UC8  書類OCR AI |
+| **低** | UC19 競合情報AI<br>UC23 HR・採用AI | UC9  事務自動化AI<br>UC17 財務予測AI |
 
 ---
 

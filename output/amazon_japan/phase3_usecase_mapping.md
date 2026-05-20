@@ -13,22 +13,11 @@
 
 ## 3-1. プライオリティマトリクス
 
-```
-戦略価値
-  高 │ UC3 AWS Bedrock日本語AI  │ UC1  物流ラストマイルAI │
-     │ UC12 Amazon Fresh AI    │ UC5  EC推薦・検索AI    │
-     │ UC2  Amazon Advertising │ UC10 CS・コンタクトAI  │
-     │ UC16 Amazon Inspire AI  │ UC4  在庫・需要予測AI  │
-  中 │ UC11 Amazon Health AI   │ UC6  出品者支援AI      │
-     │ UC14 Alexa 3rd Gen      │ UC8  不正検知・詐欺AI  │
-     │ UC15 ドローン配送AI      │ UC7  価格最適化AI      │
-     │ UC20 法人購買AI          │ UC13 リターン予測AI    │
-  低 │ UC21 環境・CO2 AI       │ UC17 HR・採用AI        │
-     │ UC25 倉庫ロボットAI      │ UC19 財務・コスト AI   │
-     ├──────────────────────┼──────────────────────
-     │    低（実現困難）        │  高（実現容易）
-     │                  実現可能性
-```
+| 戦略価値 | 実現可能性：低（実現困難） | 実現可能性：高（実現容易） |
+|:---:|:---|:---|
+| **高** | UC3 AWS Bedrock日本語AI<br>UC12 Amazon Fresh AI<br>UC2  Amazon Advertising<br>UC16 Amazon Inspire AI | **[Quick Win] UC1  物流ラストマイルAI**<br>**[Quick Win] UC5  EC推薦・検索AI**<br>**[Quick Win] UC10 CS・コンタクトAI**<br>UC4  在庫・需要予測AI |
+| **中** | UC11 Amazon Health AI<br>UC14 Alexa 3rd Gen<br>UC15 ドローン配送AI<br>UC20 法人購買AI | UC6  出品者支援AI<br>UC8  不正検知・詐欺AI<br>UC7  価格最適化AI<br>UC13 リターン予測AI |
+| **低** | UC21 環境・CO2 AI<br>UC25 倉庫ロボットAI | UC17 HR・採用AI<br>UC19 財務・コスト AI |
 
 ---
 
