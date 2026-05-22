@@ -339,3 +339,11 @@
 ---
 
 _自動生成: 2026-05-02 | 管理者: 男座員也（Kazuya Oza）_
+### Output — convenience_store 追加 (4件)
+
+| ファイル | サイズ | 説明 |
+|---|---|---|
+| `output/convenience_store/phase4_tech_architecture.md` | 25.4 KB | コンビニ AI 戦略レポート |
+| `output/convenience_store/phase6_financial_roi.md` | 23.4 KB | コンビニ AI 戦略レポート |
+| `output/convenience_store/phase7_execution_roadmap.md` | 24.5 KB | コンビニ AI 戦略レポート |
+| `output/convenience_store/phase8_risk_governance.md` | 29.7 KB | コンビニ AI 戦略レポート |
