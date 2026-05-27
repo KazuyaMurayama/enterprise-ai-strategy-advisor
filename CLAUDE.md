@@ -261,4 +261,13 @@ Phase 3（ユースケースマッピング）の `## 3-x. プライオリティ
 - レポート・成果物MDの新規作成／更新時は `.claude/visual-rules.md` を読み、図の種類判定（§2）と Mermaid 最適化（§3）を毎回適用する。
 - 適用対象: `## ` 見出しが2つ以上ある構造化MD（README・調査メモ・設計書・PR説明など）。
 
+<!-- SKILLS_RULES_START -->
+## Skill 起動ルール（v1.0 / 2026-05-27）
+- **戦略レポート/事業分析を作成する時** → `management-consulting`（42 framework, McKinsey/BCG/Bain 水準）
+- **市場/競合調査が必要な時** → `research-deep`
+- **資料に図表が必要な時** → `management-consulting`（12 SVG）＋ `mermaid-agents365`
+- **提案書・計画書の構成** → `sp-writing-plans`
+- **納品・コミット前** → `code-review`
+<!-- SKILLS_RULES_END -->
+
 <!-- GLOBAL_RULES_END -->
