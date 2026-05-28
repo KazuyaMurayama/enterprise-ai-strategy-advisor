@@ -262,12 +262,14 @@ Phase 3（ユースケースマッピング）の `## 3-x. プライオリティ
 - 適用対象: `## ` 見出しが2つ以上ある構造化MD（README・調査メモ・設計書・PR説明など）。
 
 <!-- SKILLS_RULES_START -->
-## Skill 起動ルール（v1.0 / 2026-05-27）
-- **戦略レポート/事業分析を作成する時** → `management-consulting`（42 framework, McKinsey/BCG/Bain 水準）
-- **市場/競合調査が必要な時** → `research-deep`
-- **資料に図表が必要な時** → `management-consulting`（12 SVG）＋ `mermaid-agents365`
-- **提案書・計画書の構成** → `sp-writing-plans`
-- **納品・コミット前** → `code-review`
+## Skill 起動ルール（v2.0 / 2026-05-28）
+以下のスキルは **必須・スキップ禁止**。該当シーンでは SKILL.md を読んでから作業を開始すること。
+
+- **戦略レポート・事業分析・提案書を作成する時は必ず** `.claude/skills/management-consulting/SKILL.md` を読み、McKinsey/BCG/Bain 水準のフレームワークに従って作成する
+- **市場・競合・先行研究の調査が必要な時は必ず** `.claude/skills/research-deep/SKILL.md` を読んでから並列 Web リサーチを実行する
+- **資料・レポートに図表が必要な時は必ず** `.claude/skills/mermaid-agents365/SKILL.md` を読んでからダイアグラムを作成する
+- **提案書・計画書の構成を考える前に必ず** `.claude/skills/sp-writing-plans/SKILL.md` を読んで構成を設計し、`.claude/skills/sp-executing-plans/SKILL.md` の手順で実行する
+- **成果物を納品・コミットする前に必ず** `.claude/skills/sp-verification-before-completion/SKILL.md` のチェックリストを実行する
 <!-- SKILLS_RULES_END -->
 
 <!-- GLOBAL_RULES_END -->
