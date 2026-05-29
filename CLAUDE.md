@@ -38,12 +38,14 @@
 - 成果物・スクリプトは本リポジトリ内のみに保存。`C:\\Users\\user\\Desktop` への出力禁止（ユーザー明示指定時を除く）。
 
 <!-- SKILLS_RULES_START -->
-## Skill 起動ルール（v2.0 / 2026-05-28）
+## Skill 起動ルール（v2.1 / 2026-05-29）
 以下のスキルは **必須・スキップ禁止**。該当シーンでは SKILL.md を読んでから作業を開始すること。
 
 - **戦略レポート・事業分析・提案書を作成する時は必ず** `.claude/skills/management-consulting/SKILL.md` を読み、McKinsey/BCG/Bain 水準のフレームワークに従って作成する
 - **市場・競合・先行研究の調査が必要な時は必ず** `.claude/skills/research-deep/SKILL.md` を読んでから並列 Web リサーチを実行する
 - **資料・レポートに図表が必要な時は必ず** `.claude/skills/mermaid-agents365/SKILL.md` を読んでからダイアグラムを作成する
 - **提案書・計画書の構成を考える前に必ず** `.claude/skills/sp-writing-plans/SKILL.md` を読んで構成を設計し、`.claude/skills/sp-executing-plans/SKILL.md` の手順で実行する
-- **成果物を納品・コミットする前に必ず** `.claude/skills/sp-verification-before-completion/SKILL.md` のチェックリストを実行する
+- **成果物の納品・コミット前、または品質チェック（QC）・レビューフェーズに入る時は必ず** `.claude/skills/sp-verification-before-completion/SKILL.md` のチェックリストを実行する
+- **分析・レポートの品質チェック（QC）・レビュー・共有前は必ず** `.claude/skills/analysis-qa-checklist/SKILL.md` を読んでチェックリストを実施する
+- **提案書・戦略レポートのピアレビューを実施する時は必ず** `.claude/skills/peer-review-template/SKILL.md` を読んでレビューを実施する
 <!-- SKILLS_RULES_END -->
