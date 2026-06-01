@@ -48,6 +48,7 @@
 - **成果物の納品・コミット前、または品質チェック（QC）・レビューフェーズに入る時は必ず** `.claude/skills/sp-verification-before-completion/SKILL.md` のチェックリストを実行する
 - **分析・レポートの品質チェック（QC）・レビュー・共有前は必ず** `.claude/skills/analysis-qa-checklist/SKILL.md` を読んでチェックリストを実施する
 - **提案書・戦略レポートのピアレビューを実施する時は必ず** `.claude/skills/peer-review-template/SKILL.md` を読んでレビューを実施する
+
 ### ブランチ管理（絶対厳守）
 - **デフォルト: mainへ直接コミット**。ブランチ作成はユーザーが明示的に指示した場合のみ。
 - ブランチを作成した場合、必ず `main` へマージ → ブランチ削除 → push を完了してから作業完了とする。
