@@ -1,58 +1,91 @@
-# Enterprise AI Strategy Advisor
+# Enterprise AI Strategy Advisor — Claude Code 運用ルール
 
-## プロジェクト概要
-企業名または業界名を入力するだけで、MBB（マッキンゼー・ベイン・BCG）クラスの生成AI戦略レポートを自動生成するシステム。
+企業の AI 活用戦略を立案・評価・ロードマップ化する AI コンサルタントシステム。業界・組織規模・現状課題を入力すると、具体的なAI導入施策と優先順位を自動生成する。
 
-## FILE_INDEX.md 参照ルール
-
-**`FILE_INDEX.md`** は以下のタイミングで必ず参照すること：
-
-1. **セッション開始時** — ファイル構成・ブランチ状態・生成済みレポートの概要を把握する
-2. **これまでの経緯・最新状態を確認すべき時** — バージョン差分・レポート更新履歴を確認する
-3. **ファイル参照指示があった時** — 該当ファイルのパス・最新版を特定してから作業する
+> **本ファイルは VSCode版 / Web版 Claude Code（claude.ai）の両方で本リポジトリの単独完結ガイド**。
+> Web版はグローバル `~/.claude/CLAUDE.md` を参照しない前提で、本リポの運用に必要な全ルールをここに集約。
 
 ---
 
-## 品質基準
-- **マッキンゼー水準**: MECE構造化、定量インパクト試算、So What?の明確化
-- **ベイン水準**: 実行可能性重視の具体的アクションプラン、ROI試算、Full Potential分析
-- **BCG水準**: フレームワーク活用（バリューチェーン分析、成熟度モデル、アンビション・マトリクス）
-- 数値根拠のない主張は禁止。推定でもロジックと前提を明示（フェルミ推定可）
+## 0. プロジェクト主機能
+- 業界別 AI 活用事例データベース参照
+- ROI 試算・費用対効果シミュレーション
+- 組織の AI 成熟度診断
+- 導入ロードマップ自動生成
+- 経営層向けエグゼクティブサマリー作成
 
-> プライオリティマトリクスを生成する時は `.claude/rules/priority-matrix.md` を読む
+---
 
-> AIセキュリティ・ガバナンス章を記述する時は `.claude/rules/security-framework.md` を読む
+## 1. セッション開始時の参照順序
+1. `tasks.md` — タスク管理・セッション履歴（存在する場合）
+2. `FILE_INDEX.md` — ファイル一覧インデックス（存在する場合）
+3. このCLAUDE.md — ルール入口
 
-> レポート生成・スキルコマンド・エージェントチームの詳細は `.claude/rules/report-workflow.md` を読む
+---
 
-## 開発者情報・命名ルール
+## 2. 関連リポジトリ
+| リポ | 役割 |
+|---|---|
+| [KazuyaMurayama/AI-Transformation-Architect](https://github.com/KazuyaMurayama/AI-Transformation-Architect) | 企業 AI 変革支援本体 |
+| [KazuyaMurayama/AI-ROI-simulator_v1](https://github.com/KazuyaMurayama/AI-ROI-simulator_v1) | ROI/NPV/回収期間試算 |
+| [KazuyaMurayama/AI-Architect-forge_v1](https://github.com/KazuyaMurayama/AI-Architect-forge_v1) | アーキテクチャ設計・評価 |
 
-このリポジトリの開発者・所有者は **男座員也（Kazuya Oza / おざ かずや）** です。
+---
 
-- ドキュメント・コード・コミット等で開発者名を記載する際は必ず **男座員也** または **Kazuya Oza** を使用する
-- 「Murayama」「村山」「Otokoza」「おとこざ」など誤表記は使用しない
-- 英語表記: **Kazuya Oza** / 日本語表記: **男座員也**（おざ かずや）
-- AIアシスタントが生成するドキュメントでも本ルールを遵守すること
+## 3. 開発者情報・命名ルール
 
-## ファイル保存ルール
-- 成果物・スクリプトは本リポジトリ内のみに保存。`C:\\Users\\user\\Desktop` への出力禁止（ユーザー明示指定時を除く）。
+| 種別 | 表記 | 用途 |
+|---|---|---|
+| **システム識別子（変更不可）** | `KazuyaMurayama` | GitHub ユーザー名 / URL / `@KazuyaMurayama` |
+| **システム識別子（変更不可）** | `kazuya.murayama.21@gmail.com` | git `user.email` / 連絡先 |
+| **表記名（人間として記載する場合）** | **男座員也（Kazuya Oza / おざ かずや）** | ドキュメント本文の著者名 / コミット message 中の自己言及 |
 
-<!-- SKILLS_RULES_START -->
-## Skill 起動ルール（v2.2 / 2026-06-01）
-以下のスキルは **必須・スキップ禁止**。該当シーンでは SKILL.md を読んでから作業を開始すること。
+- ドキュメント本文・コード・コミットメッセージ本文等で開発者名を**人間として**記載する際は **男座員也 / Kazuya Oza** を使用
+- 「Murayama」「村山」「Otokoza」「おとこざ」を**表記名**として誤用しない（システム識別子としての `KazuyaMurayama` は許容）
 
-- **戦略レポート・事業分析・提案書を作成する時は必ず** `.claude/skills/management-consulting/SKILL.md` を読み、McKinsey/BCG/Bain 水準のフレームワークに従って作成する
-- **市場・競合・先行研究の調査が必要な時は必ず** `.claude/skills/research-deep/SKILL.md` を読んでから並列 Web リサーチを実行する
-- **資料・レポートに図表が必要な時は必ず** `.claude/skills/mermaid-agents365/SKILL.md` を読んでからダイアグラムを作成する
-- **提案書・計画書の構成を考える前に必ず** `.claude/skills/sp-writing-plans/SKILL.md` を読んで構成を設計し、`.claude/skills/sp-executing-plans/SKILL.md` の手順で実行する
-- **成果物の納品・コミット前、または品質チェック（QC）・レビューフェーズに入る時は必ず** `.claude/skills/sp-verification-before-completion/SKILL.md` のチェックリストを実行する
-- **分析・レポートの品質チェック（QC）・レビュー・共有前は必ず** `.claude/skills/analysis-qa-checklist/SKILL.md` を読んでチェックリストを実施する
-- **提案書・戦略レポートのピアレビューを実施する時は必ず** `.claude/skills/peer-review-template/SKILL.md` を読んでレビューを実施する
+---
 
-### ブランチ管理（絶対厳守）
-- **デフォルト: mainへ直接コミット**。ブランチ作成はユーザーが明示的に指示した場合のみ。
-- ブランチを作成した場合、必ず `main` へマージ → ブランチ削除 → push を完了してから作業完了とする。
-- ブランチにファイルを置いたまま回答を完了することを禁止。「完了 = mainにマージ済み＆push済み」。
-- ブランチが残存している場合は、次セッション開始時に `git branch -a` で確認し、即マージ・削除する。
+## 4. ツール実行・Shell・Git・ファイル保存
+- 確認不要・即実行（事前確認文を出力しない）
+- ファイル操作は Edit/Write/Read/Grep/Glob を直接使用
+- 例外（事前確認必須）: main への `git push --force`、`gh repo delete`
+- Shell: VSCode版は Windows 11 + PowerShell 5.1（`&&` 不可 → `;` + `if ($?)`）/ Bash併用可。Web版は Linux サンドボックス
+- **ブランチ管理**: デフォルトはmainへ直接コミット。ブランチ作成は明示指示時のみ。万一作成した場合は必ずmainマージ→削除→push完了で「完了」
+- **ファイル保存**: 本リポ内のみ。`C:\Users\user\Desktop` への出力禁止
 
-<!-- SKILLS_RULES_END -->
+---
+
+## 5. 成果物報告ルール（最重要・毎回必須）
+
+| 成果物 | 説明 | リンク |
+|---|---|---|
+| file.md | 1行説明 | [開く](https://github.com/KazuyaMurayama/enterprise-ai-strategy-advisor/blob/main/path/to/file.md) |
+
+- Markdownリンク `[表示名](URL)` 形式必須
+- `/blob/<実ブランチ>/<実パス>` 形式
+- **報告前にURL存在確認**：`Invoke-WebRequest -Uri https://api.github.com/repos/KazuyaMurayama/enterprise-ai-strategy-advisor/contents/PATH?ref=BRANCH -UseBasicParsing` でステータス200確認
+- ブランチ名は推測禁止：`git rev-parse --abbrev-ref HEAD`
+- push完了後のみURL生成
+
+---
+
+## 6. ドキュメント日付ルール
+レポート系 .md 新規作成時は H1直下に `作成日: YYYY-MM-DD` / `最終更新日: YYYY-MM-DD` 必須。更新時は最終更新日のみ書き換え。除外: README / CLAUDE.md / FILE_INDEX / tasks.md / CHANGELOG / LICENSE。
+
+---
+
+## 7. Skill 起動ルール（必須・スキップ禁止）
+該当シーンでは `.claude/skills/<name>/SKILL.md` を読んでから作業を開始する。
+
+| トリガー | スキル |
+|---|---|
+| 戦略レポート・事業分析・提案書 | `.claude/skills/management-consulting/SKILL.md` |
+| 業界事例・先行事例の調査 | `.claude/skills/research-deep/SKILL.md` |
+| ROI/インパクト定量化 | `.claude/skills/impact-quantification/SKILL.md` / `business-metrics-calculator/SKILL.md` |
+| 経営層向けサマリー | `.claude/skills/executive-summary-generator/SKILL.md` |
+| 技術成果のビジネス翻訳 | `.claude/skills/technical-to-business-translator/SKILL.md` |
+| ステークホルダー要件 | `.claude/skills/stakeholder-requirements-gathering/SKILL.md` |
+| 図表生成 | `.claude/skills/mermaid-agents365/SKILL.md` |
+| QC・レビュー前 | `.claude/skills/analysis-qa-checklist/SKILL.md` |
+| 成果物の納品・コミット前 | `.claude/skills/sp-verification-before-completion/SKILL.md` |
+| 計画立案 | `.claude/skills/sp-writing-plans/SKILL.md` + `sp-executing-plans/SKILL.md` |
